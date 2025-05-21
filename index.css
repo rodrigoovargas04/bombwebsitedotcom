@@ -8,7 +8,7 @@ body {
     width:100vw;
     height:100vh;
     overflow:hidden;
-    font-family: 'Poetsen One', static;
+    font-family: 'Poetsen One', sans-serif;
 }
 #loading {
     width: 100vw;
