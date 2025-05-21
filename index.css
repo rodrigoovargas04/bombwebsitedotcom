@@ -14,7 +14,7 @@ body {
     width: 100vw;
     height: 100vh;
     position: fixed;
-    background:rgb(16, 45, 112);
+    background:rgb(55, 115, 255);
     z-index: 999;
     display: flex;
     justify-content: center;
@@ -47,7 +47,7 @@ body {
     display:inline-block;
 }
 .box1 {
-    background:rgb(16, 45, 112);
+    background:rgb(55, 115, 255);
 }
 .box2 {
     background:rgb(16, 45, 112);
@@ -79,7 +79,7 @@ body {
     padding-bottom:10vh;
 }
 #middle h1 {
-    color:rgb(16, 45, 112);
+    color:rgb(55, 115, 255);
     font-size:70px;
     text-decoration:underline;
 }
