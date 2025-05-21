@@ -9,6 +9,7 @@ body {
     height: 100vh;
     overflow: hidden;
     font-family: 'Poetsen One', sans-serif;
+    color: #102d70;
 }
 #loading {
     width: 100vw;
