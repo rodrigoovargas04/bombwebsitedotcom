@@ -17,6 +17,17 @@
 </head>
 
 <body>
+
+    <audio id="bg-music" loop>
+        <source src="assets/music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+
+    <div style="position: fixed; top: 10px; right: 10px; z-index: 9999;">
+        <button onclick="playMusic()" style="padding: 10px 20px; font-family: Comfortaa; font-size: 14px;">🎵 Play Music</button>
+    </div>
+
     <div id="loading">
         <div id="spinner"></div>
     </div>
@@ -45,7 +56,7 @@
         <table>
             <tr>
                 <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"
-                        href="https://www.science.org/"><i class="fas fa-atom"></i></a></td> 
+                        href="https://www.science.org/"><i class="fas fa-atom"></i></a></td>
             </tr>
         </table>
     </div>
@@ -53,9 +64,9 @@
         <div onclick="closeprojects()"><i class="fas fa-angle-right"></i></div>
         <h1>Projects</h1>
         <section>
-            <h2> Edits & Whatnot </h2>
+            <h2>Work is my Hobby!</h2>
             <p>
-                Find some of my best edits 
+                Here are some of the projects I've worked on recently. Feel free to explore.
             </p>
             <ul>
                 <div class="project_card">
@@ -68,7 +79,6 @@
                                 style="color: inherit; text-decoration: none"> View Project </a></button>
                     </div>
                 </div>
-                
             </ul>
         </section>
     </div>
@@ -78,7 +88,7 @@
         <section>
             <h2>The job is not my job</h2>
             <p>
-                Welcome! I'm X_men professor, a passionate professional specializing in fundamental science discovery. 
+                Welcome! I'm X_men professor, a passionate professional specializing in fundamental science discovery.
             </p>
             <div id="used">
                 <div><i class="fas fa-circle"></i>&nbsp;Web Designing</div>
@@ -105,9 +115,8 @@
 
             <p>
                 Feel free to explore my portfolio on my website, where you can witness the diverse range of projects
-                I've had the privilege to work on. 
+                I've had the privilege to work on.
             </p>
-
         </section>
         <section>
             <h2>skills</h2>
@@ -129,7 +138,6 @@
                 <button class="btn_one">send</button>
             </form>
             </p>
-
             <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"
                 href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></td> 
         </section>
@@ -137,9 +145,21 @@
     <div id="footer">
         Unbelievable Particles Floating Around You<br> <a href="https://powerlock.github.io">ThePowerLock</a>
     </div>
+
+
     <script src="index.js" type="text/javascript"></script>
     <script src="particles.js"></script>
     <script src="app.js"></script>
+
+
+    <script>
+        function playMusic() {
+            const audio = document.getElementById('bg-music');
+            audio.play().catch(err => {
+                console.log("Autoplay failed:", err);
+            });
+        }
+    </script>
 </body>
 
 </html>
